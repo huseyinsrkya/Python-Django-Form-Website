@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<!-- By Sarikaya -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Verification</title>
+</head>
+<body>
+    <h1>Email Verification</h1>
+    <p>Hello {{ user.username }},</p>
+    <p>Please click the link below to verify your email address:</p>
+    <p><a href="{{ verification_url }}">Verify Your Email</a></p>
+</body>
+</html>
+{% endblock content %}
